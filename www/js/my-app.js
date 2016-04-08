@@ -1,6 +1,7 @@
 // Initialize your app
 var myApp = new Framework7({
-    material: true
+    material: true,
+    swipePanel: 'left'
 });
 
 // Export selectors engine

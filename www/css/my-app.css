@@ -14,3 +14,11 @@ img.responsive {
 article {
 	margin: 20px;
 }
+
+div[class*="col-"] {
+  text-align: center;
+}
+
+.right {
+	margin-left: 200px;
+}
