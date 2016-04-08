@@ -1,0 +1,16 @@
+img.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.list-block {
+	margin: 0px;
+}
+
+.navbar-fixed.toolbar-fixed .newpage {
+	padding-top: -99px;
+}
+
+article {
+	margin: 20px;
+}

@@ -1,0 +1,91 @@
+<div class="pages">
+  <!-- Page, data-page contains page name-->
+  <div data-page="addexpense" class="page">
+
+    <div class="navbar article">
+      <div class="navbar-inner">
+        <div class="left"></div>
+        <div class="center">Input Data Keuangan</div>
+        <div class="right">
+        <a href="" class="link icon-only back">
+            <i class="icon icon-back"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scrollable page content-->
+    <div class="page-content newpage">
+      <div class="list-block">
+        <ul>
+          <!-- Smart select item -->
+          <li>
+            <!-- Additional "smart-select" class -->
+            <a href="#" class="item-link smart-select">
+              <!-- select -->
+              <select name="Kategori">
+                <option value="Makanan Berat" selected>Makanan Berat</option>
+                <option value="Minuman">Minuman</option>
+                <option value="Fashion">Fashion</option>
+                <option value="Fotocopy">Fotocopy</option>
+                <option value="Snack">Snack</option>
+                <option value="Transport">Transport</option>
+                <option value="Alat Tulis">Alat Tulis</option>
+                ...
+              </select>
+              <div class="item-content">
+                <div class="item-inner">
+                  <!-- Select label -->
+                  <div class="item-title">Kategori</div>
+                  <!-- Selected value, not required -->
+                  <div class="item-after">Minuman</div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li>
+            <div class="item-content">
+              <div class="item-inner"> 
+                <div class="item-title label">Jumlah</div>
+                <div class="item-input">
+                  <input type="tel" placeholder="Rp 75000"/>
+                </div>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <div class="item-content">
+              <div class="item-inner"> 
+                <div class="item-title label">Tanggal</div>
+                <div class="item-input">
+                  <input type="date" placeholder="Hari ini" value="2016-04-09"/>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="align-top">
+            <div class="item-content">
+              <div class="item-inner"> 
+                <div class="item-title label">Keterangan</div>
+                <div class="item-input">
+                  <textarea></textarea>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="content-block">
+        <div class="row">
+          <div class="col-50"><a href="#" class="button button-big button-fill color-red">Cancel</a></div>
+          <div class="col-50">
+            <input type="submit" value="Submit" class="button button-big button-fill color-green"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

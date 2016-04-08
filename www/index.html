@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Required meta tags-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- Color theme for statusbar -->
+		<meta name="theme-color" content="#ffc107">
+		<!-- Your app title -->
+		<title>StudentApp - Alpha</title>
+		<!-- Path to Framework7 Library CSS, Material Theme -->
+		<link rel="stylesheet" href="css/framework7.material.min.css">
+		<!-- Path to Framework7 color related styles, Material Theme -->
+		<link rel="stylesheet" href="css/framework7.material.colors.min.css">
+		<!-- Path to your custom app styles-->
+		<link rel="stylesheet" href="css/my-app.css">
+	</head>
+	<body class="theme-deeporange">
+	<!-- First, we need to add Panel's overlay that will overlays app while panel is opened -->
+	<div class="panel-overlay"></div>
+	<!-- Left panel, let it be with reveal effect -->
+	<div class="panel panel-left panel-cover">
+		<div class="list-block">
+            <ul class="menu">
+                <header>
+                    <img class="responsive" src="img/leftpanelhead.jpg" />
+                </header>
+                <li>
+                    <a href="profile.html" class="item-link item-content close-panel">
+                        <div class="item-inner menu">
+                            <div class="item-title menu">Profile</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="ideabasket.html" class="item-link item-content close-panel">
+                        <div class="item-inner menu">
+                            <div class="item-title menu">Idea</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="quotes.html" class="item-link item-content close-panel">
+                        <div class="item-inner menu">
+                            <div class="item-title menu">Quotes</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html" class="item-link item-content close-panel open-login-screen">
+                        <div class="item-inner menu">
+                            <div class="item-title menu">Sign out</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="abouts.html" class="item-link item-content close-panel">
+                        <div class="item-inner menu">
+                            <div class="item-title menu">About us</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+	</div>
+	
+	<div class="login-screen">
+	<!-- Default view-page layout -->
+	<div class="view">
+	<div class="page">
+	  <!-- page-content has additional login-screen content -->
+	  <div class="page-content login-screen-content">
+		<div class="login-screen-title">:)</div>
+		<!-- Login form -->
+		<form>
+		  <div class="list-block">
+			<ul>
+			  <li class="item-content">
+				<div class="item-inner">
+				  <div class="item-title label">Username</div>
+				  <div class="item-input">
+					<input type="text" name="username" placeholder="Username">
+				  </div>
+				</div>
+			  </li>
+			  <li class="item-content">
+				<div class="item-inner">
+				  <div class="item-title label">Password</div>
+				  <div class="item-input">
+					<input type="password" name="password" placeholder="Password">
+				  </div>
+				</div>
+			  </li>
+			</ul>
+		  </div>
+			<div class="list-block-label"><a class="link notification-callback close-login-screen"><span>Sign In</span></a></div>
+			<div class="list-block-label"><a class="link close-login-screen"><span>Cancel</span></a></div>
+		  </div>
+		</form>
+	  </div>
+	</div>
+	</div>
+  </div>
+
+
+	<!-- Views -->
+	<div class="views">
+	<!-- Your main view, should have "view-main" class -->
+		<div class="view view-main">
+		<!-- Pages container, because we use fixed navbar and toolbar, it has additional appropriate classes-->
+			<div class="pages navbar-fixed">
+			<!-- Page, "data-page" contains page name -->
+				<div data-page="index" class="page">
+				<!-- Speed Dial Wrap -->
+				<div class="speed-dial">
+				<!-- FAB inside will open Speed Dial actions -->
+				<a href="#" class="floating-button">
+				  <!-- First icon is visible when Speed Dial actions are closed -->
+				  <i class="icon icon-plus"></i>
+				  <!-- Second icon is visible when Speed Dial actions are opened -->
+				  <i class="icon icon-close"></i>
+				</a>
+				<!-- Speed Dial Actions -->
+				<div class="speed-dial-buttons">
+				  <!-- First Speed Dial button -->
+				  <a href="addexpense.html">
+				    <i class="icon demo-icon-email"></i><span>Ex</span>
+				  </a>
+				  <!-- Second Speed Dial  button -->
+				  <a href="addidea.html">
+				    <i class="icon demo-icon-calendar"></i>
+				    <span>Id</span>
+				  </a>
+				  <!-- Third Speed Dial  button -->
+				  <a href="addprojectn.html">
+				    <i class="icon demo-icon-upload"></i>
+				    <span>Pr</span>
+				  </a>
+				</div>
+				</div>
+				<!-- End of Speed Dial -->
+
+				<!-- Top Navbar. In Material theme it should be inside of the page-->
+				<div class="navbar">
+					<div class="navbar-inner">
+						<div class="left">
+							<a href="" class="link icon-only open-left-panel">
+								<i class="icon icon-bars"></i>
+							</a>
+						</div>
+						<div class="center">Home</div>
+						<div class="right">
+							<a href="" class="link open-login-screen">
+								<i class="icon icon-user"></i><span>Sign in</span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Scrollable page content -->
+				<div class="page-content hide-bars-on-scroll">
+				<center>
+				<div class="row">
+				<div class="col-100">&nbsp;</div>
+					<div class="col-10">&nbsp;</div>
+					<div class="col-80"><a href="expindex.html" class="button button-big button-fill color-red">Expenses</a></div>
+					<div class="col-10">&nbsp;</div>
+
+				<div class="col-100">&nbsp;</div>
+					<div class="col-10">&nbsp;</div>
+					<div class="col-80"><a href="ideabasket.html" class="button button-big button-fill color-lightblue">Ideas</a></div>
+					<div class="col-10">&nbsp;</div>
+
+				<div class="col-100">&nbsp;</div>
+					<div class="col-10">&nbsp;</div>
+					<div class="col-80"><a href="projectlist.html" class="button button-big button-fill color-teal">Projects</a></div>
+					<div class="col-10">&nbsp;</div>
+
+				<div class="col-100">&nbsp;</div>
+					<div class="col-10">&nbsp;</div>
+					<div class="col-80"><a href="" class="button button-big button-fill color-pink">Schedules</a></div>
+					<div class="col-10">&nbsp;</div>
+
+				<div class="col-100">&nbsp;</div>
+					<div class="col-10">&nbsp;</div>
+					<div class="col-80"><a href="quotes.html" class="button button-big button-fill color-indigo">Quotes</a></div>
+					<div class="col-10">&nbsp;</div>
+
+				<div class="col-100">&nbsp;</div>
+					<div class="col-10">&nbsp;</div>
+					<div class="col-80"><a href="profile.html" class="button button-big button-fill color-orange">Your Profile and Stats</a></div>
+					<div class="col-10">&nbsp;</div>
+
+		        </div>
+		        
+				<!-- End page content  -->
+		</div>
+	</div>
+	<!-- Path to Framework7 Library JS-->
+	<script type="text/javascript" src="js/framework7.min.js"></script>
+	<!-- Path to your app js-->
+	<script type="text/javascript" src="js/my-app.js"></script>
+	</body>
+</html> 
